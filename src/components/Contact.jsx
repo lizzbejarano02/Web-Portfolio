@@ -10,6 +10,7 @@ export const Contact = () => {
 
     emailjs.sendForm('service_irie1u9','template_ttprggl',event.target,'BXBcp1qHYfkydkf39')
     .then(response => console.log(response))
+    event.target.reset()
     .catch(error => console.log(error))
   }
    
