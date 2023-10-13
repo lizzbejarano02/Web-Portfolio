@@ -290,6 +290,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+.vitae{
+  margin-top: 28px;
+}
+
+.cv{
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 16px 23px;
+    font-size: 18px;
+    margin-left: 2px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  
+}
+.cv:hover {
+  color: #121212;
+  background-color: #fff;
+  
+}
 @keyframes updown {
     0% {
         transform: translateY(60px);
@@ -499,10 +520,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
+  
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
@@ -527,10 +545,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
-  -webkit-transition:;
-  -moz-transition:;
-  -ms-transition:;
-  -o-transition:;
+ 
 }
 .contact form button span {
   z-index: 1;
