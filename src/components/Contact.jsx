@@ -8,14 +8,14 @@ export const Contact = () => {
     const sendEmail = (event) => {
     event.preventDefault();
 
-    emailjs.sendForm('service_irie1u9','template_ttprggl',event.target,'BXBcp1qHYfkydkf39')
+    emailjs.sendForm('service_sixyrfg','template_ttprggl',event.target,'BXBcp1qHYfkydkf39')
     .then(response => console.log(response))
     event.target.reset()
     .catch(error => console.log(error))
   }
    
     return (
-      <section className="contact" id="contact">
+      <section className="contact" id="connect">
         <Container>
           <Row className="align-items-center">
             <Col size={12} md={6}>
