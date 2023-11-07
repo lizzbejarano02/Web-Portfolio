@@ -139,25 +139,29 @@ span.navbar-text {
     border-radius: 50%;
     transform: scale(0);
     transition: 0.3s ease-in-out;
+ 
 }
 .social-icon a:hover::before {
     transform: scale(1);
+
 }
 .social-icon a img {
     width: 40%;
     z-index: 1;
     transition: 0.3s ease-in-out;
+  
 }
 .social-icon a:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+    -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
@@ -198,6 +202,10 @@ nav.navbar .navbar-toggler-icon {
   border-bottom: 2px solid #fff;
   transition: all 300ms linear;
   top: -2px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
 }
 nav.navbar .navbar-toggler-icon:focus {
     border-bottom: 2px solid #fff;
@@ -213,6 +221,10 @@ nav.navbar .navbar-toggler-icon:before {
     content: '';
     z-index: 2;
     transition: all 300ms linear;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 nav.navbar .navbar-toggler-icon:after {
     top: 8px;
@@ -221,11 +233,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     transform: rotate(45deg);
     background-color: #fff;
     height: 2px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
     transform: translateY(8px) rotate(-45deg);
     background-color: #fff;
     height: 2px;
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
@@ -255,11 +275,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 57px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 10px;
   display: block;
 }
 .banner p {
@@ -283,15 +304,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+
 }
 .banner button:hover svg {
   margin-left: 25px;
 }
 .banner img {
   animation: updown 3s linear infinite;
+  -webkit-animation: updown 3s linear infinite;
 }
 .vitae{
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .cv{
@@ -304,7 +327,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: relative;
     background-color: transparent;
     transition: 0.3s ease-in-out;
-  
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
 }
 .cv:hover {
   color: #121212;
@@ -314,9 +340,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @keyframes updown {
     0% {
         transform: translateY(60px);
+        -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:;
 }
     50% {
         transform: translateY(90px);
+        -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:;
 }
     100% {
         transform: translateY(60px);
@@ -330,38 +364,148 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  margin-top: 68px;
-  padding: 0 0 50px 0;
+  margin-top: 30px;
+  display: flex;
   position: relative;
-}
-.skill-bx {
-  background: #151515;
-  border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+ 
 }
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+.skill-progress{
+  display: flex;
+  padding-top:20px ;
+  justify-content: center; 
+  
 }
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+.skill-bx1 { 
+  background: #151515;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+  border-radius: 64px;
+  padding-right: 70px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  -webkit-border-radius: 64px;
+  -moz-border-radius: 64px;
+  -ms-border-radius: 64px;
+  -o-border-radius: 64px;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
+
+.pro{
+  font-size: 40px;
+	font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.skill h4{
+  padding-top: 3px;
+  font-size: 16px;
+
+}
+.progress-skills{ 
   position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
 }
-.skill-slider .item img {
+.progress-skill{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.progress-skill .skill-box {
+  width: 100%;
+  align-items: center;
+  text-align: left;
+}
+
+.skill-box .title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #d6d6d6;
+}
+
+.skill-box .skill-bar{
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: #d6d6d6;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.skill-box .skill-per{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 85%;
+  border-radius: 6px;
+  background: #BA68C8;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+  -webkit-animation: progress 0.4s ease-in-out forwards;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.skill-per.css {
+  width: 75%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.bootstrap{
+  width: 65%;
+  animation-delay: 0.2s;
+}
+.skill-per.javascript{
   width: 50%;
-  margin: 0 auto 15px auto;
+  animation-delay: 0.3s;
 }
-.background-image-left {
+.skill-per.reactjs{
+  width: 40%;
+  animation-delay: 0.3s;
+}
+.skill-per.c{
+  width: 30%;
+  animation-delay: 0.3s;
+}
+
+
+@keyframes progress {
+  0% {
+      width: 0;
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.skill-per .tooltip{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #d6d6d6;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #BA68C8;
+  z-index: 1;
+}
+
+ .background-image-left{
   top: 28%;
   position: absolute;
   bottom: 0;
@@ -564,7 +708,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
-  
 }
 .contact form button:hover::before {
   width: 100%;
@@ -585,6 +728,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
+
 }
 .newsletter-bx h3 {
   font-weight: 700;

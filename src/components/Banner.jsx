@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col} from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg"
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
@@ -53,13 +52,11 @@ export const Banner = () => {
                         <TrackVisibility>
                         { ({isVisible}) =>
                         <div className= {isVisible ? "animated__animated animate__fadeIn" : ""} >
-                        <h1>{`Hi I'm Lizzeth Bejarano`}<br/><span className="wrap">{text}</span>
+                        <h1>{`Hi I'm`} <br/>{`Lizzeth Bejarano`}<span className="wrap"><br/>{text}</span>
                         </h1>
-             
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam incidunt quos 
                             voluptates, tenetur facilis voluptatibus officia placeat tempora culpa numquam! Ex
                              reprehenderit repellendus adipisci alias veniam. Est doloribus consequuntur eligendi?</p>
-                             <buttom onClick={() => console.log('connect')}>Lets connect <ArrowRightCircle size={25}/></buttom>
                              <div className="vitae">
                      <a className="cv" href="./HojaDeVida.pdf" target="blank">Curriculum Vitae</a>
                      </div>
