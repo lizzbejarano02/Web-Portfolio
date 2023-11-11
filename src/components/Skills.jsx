@@ -1,5 +1,9 @@
 
 import { useEffect, useState } from 'react';
+import {Card }from 'react-bootstrap';
+import sena from "../assets/img/logoSena.png"
+import oracle from "../assets/img/oracle-one.svg"
+import tic from "../assets/img/MisionTic.png"
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -122,12 +126,45 @@ export const Skills = () => {
                 </div>
             </div>
 
-        </div>
+        </div><div className='education' id='education'>
+        <h2 className='title-education'>Education</h2>
+        <div className="items-education">
+
+     <Card className="card-item"style={{ width: '12rem' }}>
+     <Card.Img className="img-card" variant="top" src={sena} />
+     <Card.Body>
+       <Card.Title>Servicio Nacional de Aprendizaje</Card.Title>
+       <Card.Text>
+         Tecnologia ADSI
+       </Card.Text>
+     </Card.Body>
+   </Card>
+
+   <Card className="card-item" style={{ width: '12rem' }}>
+     <Card.Img className="img-card" variant="top" src={tic} />
+     <Card.Body>
+       <Card.Title>Mision Tic</Card.Title>
+       <Card.Text>
+         Desarrollo Web
+       </Card.Text>
+     </Card.Body>
+   </Card>
+   
+   <Card  className="card-item" style={{ width: '12rem' }}>
+     <Card.Img className="img-card" variant="top" src={oracle} />
+     <Card.Body>
+       <Card.Title>One-Oracle</Card.Title>
+       <Card.Text>
+         Desarrollo Frontend
+       </Card.Text>
+     </Card.Body>
+   </Card>
+   </div>
+   </div>
         </section>
 
             </div>
-
-            <img src={colorSharp} alt="sharp" className="background-image-left" />
+            
         </section>
       )
 }
