@@ -323,11 +323,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     -moz-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .cv:hover {
   color: #121212;
-  background-color: #fff;
-  
+  background-color: #fff
 }
 @keyframes updown {
     0% {
@@ -365,7 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx1 {
   background: black; 
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -373,10 +377,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-right: 70px;
   padding-top: 5px;
   padding-bottom: 20px;
-  -webkit-border-radius: 64px;
-  -moz-border-radius: 64px;
-  -ms-border-radius: 64px;
-  -o-border-radius: 64px;
 }
 
 .pro{
@@ -509,135 +509,104 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
-  padding: 80px 0;
+.projects {
+  padding: 40px 0;
   position: relative;
+  justify-content: center;
+  align-items: center;
   background-color: black;
+  background-image: url(./assets/img/color-sharp.png);
+  background-repeat: no-repeat;
+  
 }
-.project h2 {
-	font-size: 45px;
+.tarjets{
+  display: flex;
+  margin-left: 50px;
+  margin-right:50px;
+
+}
+.project{
+  padding: 15px;
+  
+}
+.card{
+  background:#1f2124;
+  border-color: none;
+  color:#d6d6d6;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+
+}
+
+.card-img{
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  
+
+}
+
+.projects h2 {
+	font-size: 50px;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 12px;
 }
-.project p {
-  color: #B8B8B8;
-  font-size: 18px;
+.project .card-title{
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 10px auto 14px auto;
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
+
+.project .card-subtitle{
   font-size: 17px;
   letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
+  line-height: 1.5em;
+  margin: 14px auto 20px auto;
+  text-align: center;
+  width: 56%;
+}
+.project p {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 8px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.bottom-git{
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .git{
+  margin-top: 5px;
+  font-weight: 450;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-left: 2px;
+  background-color: transparent;
   transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-}
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
+.git:hover {
+color: #121212;
+background-color: #fff
 }
 
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 50px 0 50px 0;
 }
 .contact img {
   width: 92%;
@@ -678,13 +647,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   color: #000;
   background-color: #fff;
+  border-radius: 8px;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
- 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .contact form button span {
   z-index: 1;
@@ -703,6 +676,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .contact form button:hover::before {
   width: 100%;
