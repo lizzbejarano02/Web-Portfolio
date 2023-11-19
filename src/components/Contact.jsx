@@ -30,7 +30,7 @@ export const Contact = () => {
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Get In Touch</h2>
-                  <form className='form-mail' onSubmit={sendEmail}>
+                  <form className='form-mail ' onSubmit={sendEmail}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input type="text"  placeholder="Name" name='user_name' required/>

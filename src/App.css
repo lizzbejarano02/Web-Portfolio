@@ -336,13 +336,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @keyframes updown {
     0% {
         transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
 }
     50% {
         transform: translateY(90px);
+        -webkit-transform: translateY(90px);
+        -moz-transform: translateY(90px);
+        -ms-transform: translateY(90px);
+        -o-transform: translateY(90px);
 }
     100% {
         transform: translateY(60px);
-        
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
 }
 }
 .txt-rotate > .wrap {
@@ -363,20 +374,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-progress{
   display: flex;
   padding-top:20px ;
-  justify-content: center; 
   
 }
 .skill-bx1 {
-  background: black; 
+  background: black;
   margin-bottom: 50px;
   margin-top: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
   border-radius: 64px;
-  padding-right: 70px;
+  padding-right: 60px;
   padding-top: 5px;
   padding-bottom: 20px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .pro{
@@ -384,6 +398,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight:700;
   margin-top: 30px;
   margin-bottom: 10px;
+  padding-left: 70px;
+}
+
+.pro-1{
+  font-size: 45px;
+	font-weight:700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 30px;
 }
 .skill h4{
   padding-top: 3px;
@@ -421,6 +444,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 6px;
   margin-top: 6px;
   background: #d6d6d6;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .skill-box .skill-per{
@@ -430,13 +457,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 85%;
   border-radius: 6px;
   background: #BA68C8;
-  animation: progress 0.4s ease-in-out forwards;
+  animation: progress 6s ease-in-out forwards;
   opacity: 0;
-  -webkit-animation: progress 0.4s ease-in-out forwards;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  -webkit-animation: progress 6s ease-in-out forwards;
 }
 
 .skill-per.css {
@@ -479,6 +502,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight:700;
   margin-top: 50px;
   margin-bottom: 10px;
+  padding-left: 33px;
 }
 .card-item{
   padding-top:15px ;
@@ -493,9 +517,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
 }
 .img-card{
- margin: 0 5px;
- width: 115px;
- 
+  margin: 0 5px;
+  width: 115px;
 }
 
 .items-education{
@@ -541,10 +564,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .card-img{
   border-top-left-radius:15px;
   border-top-right-radius:15px;
-  
-
+  opacity: 1;
+ 
 }
-
+.card-img:hover{
+  opacity: 0.7;
+  transition:opacity 0.5s ease-in-out;
+  -webkit-transition:opacity 0.5s ease-in-out;
+  -moz-transition:opacity 0.5s ease-in-out;
+  -ms-transition:opacity 0.5s ease-in-out;
+  -o-transition:opacity 0.5s ease-in-out;
+}
 .projects h2 {
 	font-size: 50px;
 	font-weight: 700;
@@ -628,7 +658,10 @@ background-color: #fff
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
-  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);

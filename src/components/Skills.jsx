@@ -68,7 +68,7 @@ export const Skills = () => {
               </div>
             </div>
             <section className="progress-skills">
-            <h3 className="pro">Hard Skills</h3> 
+            <h3 className="pro-1">Hard Skills</h3> 
             <div className="progress-skill">
             <div className="skill-box">
                 <span className="title">HTML</span>
