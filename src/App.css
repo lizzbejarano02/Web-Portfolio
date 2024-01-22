@@ -518,7 +518,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .img-card{
   margin: 0 5px;
-  width: 115px;
+  width: auto;
 }
 
 .items-education{

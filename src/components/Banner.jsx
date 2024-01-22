@@ -54,9 +54,11 @@ export const Banner = () => {
                         <div className= {isVisible ? "animated__animated animate__fadeIn" : ""} >
                         <h1>{`Hi I'm`} <br/>{`Lizzeth Bejarano`}<span className="wrap"><br/>{text}</span>
                         </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam incidunt quos 
-                            voluptates, tenetur facilis voluptatibus officia placeat tempora culpa numquam! Ex
-                             reprehenderit repellendus adipisci alias veniam. Est doloribus consequuntur eligendi?</p>
+                        <p>Desarrolladora frontend con tecnologia en analisis y desarrollo de sistemas de información,
+                            tengo  conocimientos en HTML, CSS, Javascript y ReactJs. <br />
+                            Siempre me ha interesado todo lo que este relacionado con la tecnologia, especialmente 
+                            el desarrollo de software; razon por la cual adquiri experiencia en el diseño de paginas web.
+                            </p>
                              <div className="vitae">
                      <a className="cv" href="./HojaDeVida.pdf" target="blank">Curriculum Vitae</a>
                      </div>

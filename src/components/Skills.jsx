@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import {Card }from 'react-bootstrap';
 import sena from "../assets/img/logoSena.png"
-import oracle from "../assets/img/oracle-one.svg"
+import oracle from "../assets/img/oracleOne.png"
 import tic from "../assets/img/MisionTic.png"
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -132,9 +132,9 @@ export const Skills = () => {
      <Card className="card-item"style={{ width: '12rem', background:'none'}}>
      <Card.Img className="img-card" variant="top" src={sena} />
      <Card.Body>
-       <Card.Title>Servicio Nacional de Aprendizaje</Card.Title>
+       <Card.Title>SENA</Card.Title>
        <Card.Text>
-         Tecnologia ADSI
+       ADSI Technology
        </Card.Text>
      </Card.Body>
    </Card>
@@ -144,7 +144,7 @@ export const Skills = () => {
      <Card.Body>
        <Card.Title>Mision Tic</Card.Title>
        <Card.Text>
-         Desarrollo Web
+       Web Development
        </Card.Text>
      </Card.Body>
    </Card>
@@ -154,7 +154,7 @@ export const Skills = () => {
      <Card.Body>
        <Card.Title>One-Oracle</Card.Title>
        <Card.Text>
-         Desarrollo Frontend
+       Frontend Development
        </Card.Text>
      </Card.Body>
    </Card>
