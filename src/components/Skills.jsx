@@ -133,7 +133,7 @@ export const Skills = () => {
      <Card.Img className="img-card" variant="top" src={sena} />
      <Card.Body>
        <Card.Title>SENA</Card.Title>
-       <Card.Text>
+       <Card.Text className='pruebaE'>
        ADSI Technology
        </Card.Text>
      </Card.Body>
@@ -143,7 +143,7 @@ export const Skills = () => {
      <Card.Img className="img-card" variant="top" src={tic} />
      <Card.Body>
        <Card.Title>Mision Tic</Card.Title>
-       <Card.Text>
+       <Card.Text className='pruebaE'>
        Web Development
        </Card.Text>
      </Card.Body>
@@ -153,7 +153,7 @@ export const Skills = () => {
      <Card.Img className="img-card" variant="top" src={oracle} />
      <Card.Body>
        <Card.Title>One-Oracle</Card.Title>
-       <Card.Text>
+       <Card.Text className='pruebaE'>
        Frontend Development
        </Card.Text>
      </Card.Body>
